@@ -75,24 +75,12 @@ async function run() {
             res.json(result);
             console.log(orderModify);
         })
-
-
-
-        //POST api to get the my-order of a user
-        // app.post('/booking/email', async (req, res) => {
-        //     const email = req.body;
-        //     console.log('myorder', email);
-        //     res.send('ya')
-        // })
     }
     finally {
         // await client.close();
     }
 }
 run().catch(console.dir);
-
-
-
 
 app.get('/', (req, res) => {
     res.send('hello world');
