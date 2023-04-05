@@ -13,7 +13,7 @@ const port = process.env.PORT || 5000;
 const user = process.env.DB_user;
 const password = process.env.DB_pass;
 
-const uri = `mongodb+srv://${user}:${password}@cluster0.in8lp.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`;
+const uri = `mongodb+srv://ema_john1:dcUsKfubI5sFxRND@cluster0.in8lp.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`;
 const client = new MongoClient(uri, {useNewUrlParser: true, useUnifiedTopology: true});
 
 async function run() {
